@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todolistia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">✔</span>
+        <span class="logo-text">to-do list</span>
+      </div>
+      <div class="search-add">
+        <input type="text" id="search-input" placeholder="Search tasks">
+        <button id="add-task-btn" title="Agregar tarea">+</button>
+      </div>
+  <!-- Modal para crear/editar tarea -->
+  <div id="task-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <div id="close-modal"><span class="close">&times;</span></div>
+      <div class="modal-header">
+        <h2 id="modal-title">Nueva tarea</h2>
+      </div>
+      <form id="task-form" style="display:flex;flex-direction:column;gap:12px;">
+        <input type="text" id="task-input" placeholder="Título de la tarea" required>
+        <textarea id="content-input" placeholder="Contenido (opcional)" rows="4"></textarea>
+        <button type="submit" id="save-task-btn" title="Guardar tarea" style="background:none;border:none;padding:0;margin:0 auto;display:block;color:#222;font-size:2em;cursor:pointer;"><span>&#128190;</span></button>
+      </form>
+    </div>
+  </div>
+    </header>
+    <section class="tasks-section">
+      <ul id="task-list"></ul>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
