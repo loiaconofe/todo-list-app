@@ -1,4 +1,4 @@
-# TodoListIA
+# ToDoListIA
 
 Aplicación de lista de tareas con frontend y backend.
 
