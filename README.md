@@ -11,7 +11,7 @@ Aplicación de lista de tareas con frontend y backend.
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/fedehook/todo-list-app.git
+   git clone https://github.com/loiaconofe/todo-list-app.git
    ```
 2. Instala dependencias en el backend:
    ```sh
