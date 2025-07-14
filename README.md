@@ -22,9 +22,15 @@ Aplicación de lista de tareas con frontend y backend.
 ## Uso
 
 1. Inicia el backend:
-   ```sh
-   node server.js
-   ```
+   Puedes iniciar el servidor de dos formas:
+   - Usando Node.js directamente:
+     ```sh
+     node server.js
+     ```
+   - Usando npm (si tienes configurado el script "start" en package.json):
+     ```sh
+     npm start
+     ```
 2. Abre `frontend/index.html` en tu navegador.
 
 ## Funcionalidades
