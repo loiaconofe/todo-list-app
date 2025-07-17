@@ -43,7 +43,7 @@ function handleTaskForm(e) {
   }
   closeTaskModal();
 }
-const API_URL = 'http://localhost:3000/tasks';
+const API_URL = 'http://localhost:3000/api/tasks';
 
 const taskForm = document.getElementById('task-form');
 const taskInput = document.getElementById('task-input');
