@@ -1,11 +1,22 @@
+> ⚠️ **Importante:**
+>
+> No ejecutes `node backend/server.js` ni `node src/server.ts` directamente. El backend ahora está en TypeScript y debe ejecutarse usando los scripts de npm:
+>
+> - Para desarrollo: `npm run dev` (recarga automática, sin compilar manualmente)
+> - Para producción: `npm run build` y luego `npm start` (ejecuta el código compilado en `dist/`)
+
 # ToDoListIA
 
-Aplicación de lista de tareas con frontend y backend.
+
+Aplicación de lista de tareas con frontend y backend (Node.js + TypeScript + Express).
 
 ## Estructura del proyecto
 
 - `frontend/`: Contiene la interfaz web (HTML, CSS, JS).
-- `backend/`: Servidor Node.js para la API de tareas.
+- `backend/`: API REST construida con Node.js, TypeScript y Express.
+  - `src/`: Código fuente en TypeScript.
+  - `routes/`: Rutas de la API (por ejemplo, `/api/tasks`).
+  - `dist/`: Archivos compilados a JavaScript.
 
 ## Instalación
 
@@ -13,29 +24,33 @@ Aplicación de lista de tareas con frontend y backend.
    ```sh
    git clone https://github.com/loiaconofe/todo-list-app.git
    ```
-2. Instala dependencias en el backend:
+2. Instala dependencias en el backend (dentro de la carpeta backend):
    ```sh
-   cd todolistia/backend
+   cd backend
    npm install
    ```
 
 ## Uso
 
-1. Inicia el backend:
+1. Inicia el backend (dentro de la carpeta backend):
    Puedes iniciar el servidor de dos formas:
-   - Usando Node.js directamente:
+   - En modo desarrollo (recarga automática y TypeScript):
      ```sh
-     node server.js
+     npm run dev
      ```
-   - Usando npm (si tienes configurado el script "start" en package.json):
+   - En modo producción (compilado a JavaScript):
      ```sh
+     npm run build
      npm start
      ```
-2. Abre `frontend/index.html` en tu navegador.
+2. Abre el archivo `frontend/index.html` directamente en tu navegador web (no requiere servidor para el frontend).
+## Contribución
+
+¡Las contribuciones son bienvenidas! Si deseas colaborar, por favor abre un issue o un pull request siguiendo las buenas prácticas de desarrollo y manteniendo la estructura del proyecto.
 
 ## Funcionalidades
 
-- Crear, editar y eliminar tareas.
+- Crear, editar y eliminar tareas (API RESTful con Express y rutas separadas).
 - Marcar tareas como completadas o pendientes.
 - Búsqueda de tareas por título o contenido.
 
@@ -43,11 +58,13 @@ Aplicación de lista de tareas con frontend y backend.
 
 - El backend corre por defecto en `http://localhost:3000`.
 - Puedes modificar la URL en `frontend/app.js` si cambias el puerto.
+- El código fuente del backend está en TypeScript (`backend/src/`).
 
 ## Requisitos
 
 - Node.js
 - Navegador web moderno
+- TypeScript
 
 ## Desarrollo asistido con GitHub Copilot
 
